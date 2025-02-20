@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "973b4b56-92f4-4aa5-bafa-9b8c4e6b0816",
+		"name": "Hazlotumismo2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38340876"
+	},
+	"item": [
+		{
+			"name": "Obtener todos los players",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/v1/players",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear nuevo Player",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Carmelo\",\n    \"last_name\": \"Anthony\",\n    \"age\": 37,\n    \"Team\": \"Lakers\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/v1/players",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Player por su ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Carmelo\",\n    \"last_name\": \"Anthony\",\n    \"age\": 37,\n    \"Team\": \"Lakers\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/v1/players/597ae149-81fd-4f42-9f46-47bcd174df30",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"players",
+						"597ae149-81fd-4f42-9f46-47bcd174df30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Player por su ID",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Carmelo\",\n    \"last_name\": \"Villavicencio\",\n    \"age\": 43,\n    \"Team\": \"Chicago Bulls\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/v1/players/597ae149-81fd-4f42-9f46-47bcd174df30",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"players",
+						"597ae149-81fd-4f42-9f46-47bcd174df30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Player por su ID",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/v1/players/b3ac9199-822c-4c88-b34c-836d88892f22",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"players",
+						"b3ac9199-822c-4c88-b34c-836d88892f22"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
